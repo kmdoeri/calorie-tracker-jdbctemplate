@@ -41,6 +41,10 @@ public class LogEntry {
     public void setType(LogEntryType type) {
         this.type = type;
     }
+    
+    public void setType(int value) {
+        this.type = LogEntryType.findByValue(value);
+    }
 
     public String getDescription() {
         return description;
